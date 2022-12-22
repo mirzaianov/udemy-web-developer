@@ -1,0 +1,22 @@
+h2 {
+    color: red;
+    text-align: center;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    font-style: 30px;
+}
+
+.text {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.chapter {
+    color: rgba(255, 20, 147, 1);
+}
+
+#begin {
+    color: orange;
+    font-weight: bold;
+}
