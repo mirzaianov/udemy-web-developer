@@ -50,7 +50,7 @@ h2.title {
     margin-top: 30px;
 }
 
-.simple .titie_big {
+.simple .title_big {
     color: #ffffff;
     font-family: 'Roboto - Black';
     font-size: 80px;
@@ -280,13 +280,65 @@ h2.title {
     margin-bottom: 0px;
 }
 
-/* */
-
 .webinar {
-    min-height: 630px;
+    min-height: 512px;
+    padding: 89px 0 51px 0;
 }
+
+.webinar .webinar__icon {
+    display: block;
+    margin: 0 auto;
+}
+
+.webinar .webinar__text--1 {
+    color: #252525;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 36px;
+}
+
+.webinar .webinar__text--2 {
+    color: #299cbd;
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.webinar .webinar__text--3 {
+    color: #4a4a4a;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+/* */
 
 .footer {
     background: #1a1a1a;
     min-height: 169px;
+    padding: 57px;
+}
+
+.footer .footer__text {
+    color: #888888;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.footer .footer__text .footer__link {
+    color: #888888;
 }
