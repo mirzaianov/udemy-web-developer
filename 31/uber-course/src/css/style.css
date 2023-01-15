@@ -79,7 +79,7 @@ nav {
   box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
   border: none;
   border-radius: 4px;
-  background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  background-image: linear-gradient(to top, #1EACC7 0%, #4ce2ff 100%);
   color: #ffffff;
   font-weight: 400;
   font-size: 14px;
@@ -129,7 +129,7 @@ nav {
   box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
   border: none;
   border-radius: 4px;
-  background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  background-image: linear-gradient(to top, #1EACC7 0%, #4ce2ff 100%);
   color: #ffffff;
   font-weight: 400;
   font-size: 18px;
@@ -154,7 +154,7 @@ nav {
   margin-right: 26px;
   width: 113px;
   height: 113px;
-  background-color: #1eacc7;
+  background-color: #1EACC7;
   border-radius: 100%;
 }
 .reasons .reasons__block .reasons__description {
@@ -162,7 +162,7 @@ nav {
 }
 .reasons .reasons__block .reasons__description .reasons__subtitle {
   line-height: 21px;
-  color: #1eacc7;
+  color: #1EACC7;
   font-size: 17px;
   font-weight: 400;
 }
@@ -209,4 +209,91 @@ nav {
   min-height: 864px;
   padding: 48px 0 79px 0;
   background: url("../img/mobile_bg.jpg") center center/cover no-repeat;
+}
+.mobile .row {
+  margin-top: 32px;
+}
+.mobile__item {
+  position: relative;
+  width: 320px;
+  height: 280px;
+  margin: 0 auto;
+  margin-bottom: 19px;
+  padding-top: 92px;
+}
+.mobile__item-1 {
+  background: url("../img/card-1.jpg") center center/cover no-repeat;
+}
+.mobile__item-2 {
+  background: url("../img/card-2.jpg") center center/cover no-repeat;
+}
+.mobile__item-3 {
+  background: url("../img/card-3.jpg") center center/cover no-repeat;
+}
+.mobile__item-4 {
+  background: url("../img/card-4.jpg") center center/cover no-repeat;
+}
+.mobile__item-5 {
+  background: url("../img/card-5.jpg") center center/cover no-repeat;
+}
+.mobile__item-6 {
+  background: url("../img/card-6.jpg") center center/cover no-repeat;
+}
+.mobile__item-subtitle {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: center;
+}
+.mobile__item-plus {
+  display: flex;
+  justify-content: center;
+  alight-items: center;
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 26px;
+  height: 26px;
+  background: #000000;
+  margin: 0 auto;
+  border-radius: 100%;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.car {
+  min-height: 896px;
+  padding: 56px 0 136px 0;
+  background: url("../img/car_bg.jpg") center center/cover no-repeat;
+}
+.car .label {
+  background-color: #FFFFFF;
+  color: #070716;
+}
+.car .title {
+  margin-top: 26px;
+  color: #FFFFFF;
+}
+.car .subtitle {
+  margin-top: -1px;
+  color: #FFFFFF;
+}
+.car__image {
+  margin-top: 54px;
+}
+.car__image img {
+  display: block;
+  margin: 0 auto;
+}
+.car__text {
+  width: 327px;
+  height: 49px;
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 17px;
+  text-align: center;
+  color: #222222;
 }/*# sourceMappingURL=style.css.map */
