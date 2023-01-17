@@ -26,14 +26,17 @@ nav {
   margin: 0;
   list-style-type: none;
 }
-.menu .menu__link {
+.menu__link {
   color: #ffffff;
   font-weight: 300;
   font-size: 15px;
 }
-.menu .menu__item {
+.menu__item {
   border-right: 2px dotted black;
   padding-right: 28px;
+}
+.menu__item:last-child {
+  border-right: none;
 }
 
 .subheader {
@@ -43,26 +46,26 @@ nav {
   height: 84px;
   background-color: rgba(0, 0, 0, 0.6);
 }
-.subheader .subheader__logo {
+.subheader__logo {
   display: block;
   min-width: 100%;
   margin-top: 16px;
 }
-.subheader .subheader__official {
+.subheader__official {
   color: #ffffff;
   font-weight: 100;
   font-size: 13px;
   opacity: 0.6;
   margin-top: 6px;
 }
-.subheader .subheader__call {
+.subheader__call {
   color: #ffffff;
   font-weight: 300;
   font-size: 12px;
   text-align: right;
   margin-top: 19px;
 }
-.subheader .subheader__phone {
+.subheader__phone {
   display: block;
   color: #ffffff;
   font-weight: 400;
@@ -72,7 +75,7 @@ nav {
   text-transform: uppercase;
   line-height: 12px;
 }
-.subheader .subheader__btn {
+.subheader__btn {
   margin-top: 19px;
   width: 172px;
   height: 46px;
@@ -87,7 +90,7 @@ nav {
   text-transform: uppercase;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
 }
-.subheader .subheader__btn:hover {
+.subheader__btn:hover {
   background-image: none;
   background-color: #1EACC7;
 }
@@ -97,7 +100,7 @@ nav {
   background: url("../img/uber_bg.jpg") center center/cover no-repeat;
   padding: 150px 0 135px 0;
 }
-.promo .promo__header {
+.promo__header {
   color: #ffffff;
   margin: 0;
   font-weight: 700;
@@ -106,7 +109,7 @@ nav {
   text-transform: uppercase;
   text-align: center;
 }
-.promo .promo__subheader {
+.promo__subheader {
   margin: 0;
   margin-top: 22px;
   font-weight: 700;
@@ -116,7 +119,7 @@ nav {
   color: #ffffff;
   text-align: center;
 }
-.promo .promo__description {
+.promo__description {
   margin-top: 23px;
   font-weight: 400;
   font-size: 18px;
@@ -124,7 +127,7 @@ nav {
   text-align: center;
   color: #ffffff;
 }
-.promo .promo__btn {
+.promo__btn {
   display: block;
   margin: 0 auto;
   margin-top: 118px;
@@ -141,7 +144,7 @@ nav {
   text-transform: uppercase;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
 }
-.promo .promo__btn:hover {
+.promo__btn:hover {
   background-image: none;
   background-color: #1EACC7;
 }
@@ -149,13 +152,13 @@ nav {
 .reasons {
   padding: 71px 0 65px 0;
 }
-.reasons .reasons__block {
+.reasons__block {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 35px;
 }
-.reasons .reasons__block .reasons__round {
+.reasons__round {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -165,16 +168,16 @@ nav {
   background-color: #1EACC7;
   border-radius: 100%;
 }
-.reasons .reasons__block .reasons__description {
+.reasons__description {
   width: 343px;
 }
-.reasons .reasons__block .reasons__description .reasons__subtitle {
+.reasons__subtitle {
   line-height: 21px;
   color: #1EACC7;
   font-size: 17px;
   font-weight: 400;
 }
-.reasons .reasons__block .reasons__description .reasons__text {
+.reasons__text {
   color: #202020;
   font-size: 15px;
   font-weight: 300;
@@ -483,4 +486,82 @@ a:hover {
   margin-top: 19px;
   text-transform: uppercase;
   text-align: center;
+}
+@media (max-width: 1199px) {
+  .menu__item {
+    padding-right: 20px;
+  }
+  .menu__link {
+    font-size: 13px;
+  }
+  .promo__header {
+    font-size: 50px;
+  }
+  .reasons__block {
+    align-items: flex-start;
+  }
+  .reasons__description {
+    width: 300px;
+  }
+}
+@media (max-width: 992px) {
+  .menu__item {
+    padding-right: 8px;
+  }
+  .menu__link {
+    font-size: 10px;
+  }
+  .subheader__logo img {
+    width: 100%;
+  }
+  .subheader__official {
+    font-size: 11px;
+  }
+  .subheader__phone {
+    font-size: 18px;
+  }
+  .subheader__btn {
+    margin-top: 21px;
+    height: 40px;
+    width: 100%;
+  }
+  .promo__header {
+    font-size: 40px;
+  }
+  .promo__subheader {
+    font-size: 30px;
+  }
+  .reasons__block {
+    flex-direction: column;
+    align-items: center;
+  }
+  .reasons__description {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .menu {
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    padding: 20px 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.6s all;
+  }
+  .menu__active {
+    left: 0;
+  }
+  .menu__item {
+    padding-right: 0;
+    border: none;
+    margin: 10px;
+  }
+  .menu__link {
+    font-size: 19px;
+  }
 }/*# sourceMappingURL=style.css.map */
