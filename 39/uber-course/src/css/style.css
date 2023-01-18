@@ -578,12 +578,32 @@ a:hover {
   }
   .footer__wrapper > div:nth-child(1) {
     width: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .footer__wrapper > div:nth-child(2) {
     width: 50%;
   }
   .footer__wrapper > div:nth-child(3) {
     width: 25%;
+  }
+  .footer__wrapper > div img {
+    margin-bottom: 4px;
+  }
+  .footer__mobile {
+    width: 95px;
+  }
+  .footer__social {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 80px;
+  }
+  .footer__social-item {
+    margin: 4px;
   }
 }
 @media (max-width: 991px) {
@@ -627,6 +647,33 @@ a:hover {
   }
   .reasons__description {
     margin-top: 20px;
+  }
+  .car__image img {
+    width: 100%;
+  }
+  .mobile {
+    min-height: auto;
+    padding: 48px 0 24px 0;
+  }
+  .mobile__item {
+    padding-top: 35px;
+    height: 212px;
+  }
+  .mobile__item-subtitle {
+    font-size: 20px;
+    padding: 0 20px;
+  }
+  .footer__wrapper > div:nth-child(1) {
+    width: 17.5%;
+  }
+  .footer__wrapper > div:nth-child(2) {
+    width: 65%;
+  }
+  .footer__wrapper > div:nth-child(3) {
+    width: 17.5%;
+  }
+  .footer__wrapper > div img {
+    margin-bottom: 4px;
   }
 }
 @media (max-width: 767px) {

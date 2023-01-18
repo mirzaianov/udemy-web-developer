@@ -20,10 +20,21 @@
         &__wrapper > div
             &:nth-child(1)
                 width: 25%
+                display: flex
+                justify-content: flex-start
             &:nth-child(2)
                 width: 50%
             &:nth-child(3)
                 width: 25%
+            img
+                margin-bottom: 4px
+        &__mobile
+            width: 95px
+        &__social
+            flex-wrap: wrap
+            width: 80px
+            &-item
+                margin: 4px
 
 @media (max-width: 991px)
     .menu
@@ -56,6 +67,29 @@
             margin-right: 0
         &__description
             margin-top: 20px
+    .car
+        &__image
+            img
+                width: 100%
+    .mobile
+        min-height: auto
+        padding: 48px 0 24px 0
+        &__item
+            padding-top: 35px
+            height: 212px
+            &-subtitle
+                font-size: 20px
+                padding: 0 20px
+    .footer
+        &__wrapper > div
+            &:nth-child(1)
+                width: 17.5%
+            &:nth-child(2)
+                width: 65%
+            &:nth-child(3)
+                width: 17.5%
+            img
+                margin-bottom: 4px
 
 @media (max-width: 767px)
     .menu
