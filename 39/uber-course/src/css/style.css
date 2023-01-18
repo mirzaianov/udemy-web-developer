@@ -767,6 +767,40 @@ a:hover {
   .promo__header {
     line-height: 45px;
   }
+  .mobile {
+    min-height: auto;
+    padding: 48px 0 24px 0;
+  }
+  .mobile .title {
+    line-height: 46px;
+    padding: 0 20px;
+  }
+  .mobile .subtitle {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  .mobile__item {
+    padding-top: 35px;
+    height: 280px;
+    width: 320px;
+  }
+  .mobile__item-subtitle {
+    font-size: 20px;
+    padding: 0 20px;
+  }
+  .footer__mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .footer__mobile img {
+    width: 75%;
+  }
 }
 @media (max-width: 575px) {
   nav {
