@@ -673,7 +673,7 @@ a:hover {
     width: 17.5%;
   }
   .footer__wrapper > div img {
-    margin-bottom: 4px;
+    margin-bottom: 9px;
   }
 }
 @media (max-width: 767px) {
@@ -792,14 +792,24 @@ a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__mobile a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
   .footer__mobile img {
     width: 75%;
+  }
+  .footer__links {
+    width: 100%;
   }
 }
 @media (max-width: 575px) {
