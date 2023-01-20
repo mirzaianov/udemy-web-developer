@@ -1,2 +1,4 @@
-Webdev2019-master
-.vscode
+Webdev2019-master/
+.vscode/
+.stylelintrc.json
+package.json
