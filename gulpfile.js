@@ -8,33 +8,33 @@ const rename = require('gulp-rename');
 gulp.task('server', function () {
     browserSync({
         server: {
-            // поменять путь!
-            baseDir: '48/pulse/src',
+            //! поменять путь!
+            baseDir: '50/pulse/src',
         },
     });
 
-    // поменять путь!
-    gulp.watch('48/pulse/src/*.html').on('change', browserSync.reload);
+    //! поменять путь!
+    gulp.watch('50/pulse/src/*.html').on('change', browserSync.reload);
 });
 
 gulp.task('styles', function () {
     return (
         gulp
-            // поменять путь!
-            .src('48/pulse/src/sass/**/*.+(scss|sass)')
+            //! поменять путь!
+            .src('50/pulse/src/sass/**/*.+(scss|sass)')
             .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
             .pipe(rename({ suffix: '.min', prefix: '' }))
             .pipe(autoprefixer())
             .pipe(cleanCSS({ compatibility: 'ie8' }))
-            // поменять путь!
-            .pipe(gulp.dest('48/pulse/src/css'))
+            //! поменять путь!
+            .pipe(gulp.dest('50/pulse/src/css'))
             .pipe(browserSync.stream())
     );
 });
 
 gulp.task('watch', function () {
-    // поменять путь!
-    gulp.watch('48/pulse/src/sass/**/*.+(scss|sass)', gulp.parallel('styles'));
+    //! поменять путь!
+    gulp.watch('50/pulse/src/sass/**/*.+(scss|sass)', gulp.parallel('styles'));
 });
 
 gulp.task('default', gulp.parallel('watch', 'server', 'styles'));
