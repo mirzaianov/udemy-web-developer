@@ -1,0 +1,45 @@
+{
+    "name": "14-web-udemy-course-2022-12-19",
+    "version": "1.0.0",
+    "description": "first web udemy course",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "stylelint": "stylelint '**/*{.css,.scss}'",
+        "stylelint:fix": "stylelint '**/*{.css,.scss}' --fix"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/msejak/14-web-udemy-course-2022-12-19.git"
+    },
+    "keywords": [],
+    "author": "msejak",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/msejak/14-web-udemy-course-2022-12-19/issues"
+    },
+    "homepage": "https://github.com/msejak/14-web-udemy-course-2022-12-19#readme",
+    "devDependencies": {
+        "browser-sync": "^2.27.11",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^8.0.0",
+        "gulp-clean-css": "^4.3.0",
+        "gulp-cli": "^2.3.0",
+        "gulp-htmlmin": "^5.0.1",
+        "gulp-rename": "^2.0.0",
+        "gulp-sass": "^5.1.0",
+        "postcss-scss": "^4.0.6",
+        "prettier": "^2.8.3",
+        "sass": "^1.57.1",
+        "stylelint": "^14.16.1",
+        "stylelint-config-prettier": "^9.0.4",
+        "stylelint-config-rational-order": "^0.1.2",
+        "stylelint-config-standard": "^29.0.0",
+        "stylelint-order": "^6.0.1",
+        "stylelint-prettier": "^2.0.0",
+        "stylelint-scss": "^4.3.0"
+    },
+    "dependencies": {
+        "gulp-imagemin": "^7.1.0"
+    }
+}
