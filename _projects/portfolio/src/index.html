@@ -699,6 +699,7 @@
               class="contacts__form">
               <div class="contacts__input">
                 <input
+                  required
                   name="name"
                   id="name"
                   type="text" />
@@ -706,6 +707,7 @@
               </div>
               <div class="contacts__input">
                 <input
+                  required
                   name="email"
                   id="email"
                   type="email" />
@@ -718,8 +720,14 @@
                   id="text"></textarea>
                 <label for="text">Ваше сообщение</label>
               </div>
-              <div>
+              <div class="contacts__triggers">
                 <button class="contacts__btn btn">Отправить сообщение</button>
+                <div class="contacts__policy">
+                  <input
+                    required
+                    type="checkbox" />
+                  <span>Я согласен(а) с <a href="/policy.html">политикой конфиденциальности</a></span>
+                </div>
               </div>
             </form>
           </div>
