@@ -1,0 +1,85 @@
+* {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+body {
+  color: #212529;
+  background-color: #eee;
+  padding: 0.5em;
+}
+
+h1,
+h2,
+ol,
+p {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+.page {
+  // background: white;
+  // display: block;
+  // margin: 0 auto;
+  // margin-bottom: 0.5cm;
+  // box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+  max-width: 21cm;
+  min-height: 29.7cm;
+  padding: 2em;
+  margin: 0 auto;
+  border: 0.1em #d3d3d3 solid;
+  border-radius: 0.5em;
+  background: #fefefe;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+// .page[size='A4'] {
+//   width: 21cm;
+//   min-height: 29.7cm;
+// }
+
+.mark {
+  display: inline;
+  padding: 0.05em;
+  background-color: #fcf8e3;
+  word-wrap: break-word;
+  border-bottom: 1.5px dotted #fa8669;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  // line-height: 1.1;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  // line-height: 1.1;
+}
+
+ol {
+  padding: 0 2em;
+  list-style: none;
+}
+
+p {
+  //
+}
+
+@media print {
+  .page {
+    margin: 0;
+    border: initial;
+    border-radius: initial;
+    width: initial;
+    min-height: initial;
+    box-shadow: initial;
+    background: initial;
+    page-break-after: always;
+  }
+}
