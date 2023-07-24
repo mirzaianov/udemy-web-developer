@@ -21,15 +21,14 @@ p {
   margin-bottom: 1em;
 }
 
+article {
+  margin-bottom: 1em;
+}
+
 .page {
-  // background: white;
-  // display: block;
-  // margin: 0 auto;
-  // margin-bottom: 0.5cm;
-  // box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
   max-width: 21cm;
   min-height: 29.7cm;
-  padding: 2em;
+  padding: 1.5em 2em 1em 2em;
   margin: 0 auto;
   border: 0.1em #d3d3d3 solid;
   border-radius: 0.5em;
@@ -37,38 +36,65 @@ p {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-// .page[size='A4'] {
-//   width: 21cm;
-//   min-height: 29.7cm;
-// }
-
 .mark {
   display: inline;
   padding: 0.05em;
   background-color: #fcf8e3;
   word-wrap: break-word;
   border-bottom: 1.5px dotted #fa8669;
+  color: inherit;
 }
 
 h1 {
   font-size: 1.5rem;
   font-weight: 600;
-  // line-height: 1.1;
+  margin-bottom: 0.5em;
 }
 
 h2 {
   font-size: 1.25rem;
   font-weight: 500;
-  // line-height: 1.1;
+  margin-bottom: 0.5em;
 }
 
-ol {
+ol,
+ul {
   padding: 0 2em;
   list-style: none;
 }
 
+ul {
+  padding: 0;
+}
+
 p {
   //
+}
+
+tr,
+td {
+  border: 1px solid #d8d8d8;
+}
+
+.aims {
+  &__purpose {
+    vertical-align: top;
+    padding: 0.5em 0.75em;
+    max-width: 300px;
+    text-align: left;
+  }
+  &__resourse {
+    vertical-align: top;
+    padding: 0.5em 0.75em;
+    text-align: left;
+    &::before {
+      content: '●';
+      display: inline-block;
+      font-size: 10px;
+      // line-height: 24px;
+      margin-right: 5px;
+    }
+  }
 }
 
 @media print {
