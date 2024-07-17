@@ -1,5 +1,7 @@
-# WEB-разработчик
+# WEB-developer
+
+## Description
 
 Hi!
 
-In this repo I store notes from the course of [WEB-разработчик](https://www.udemy.com/course/webdeveloper/) by Иван Петриченко
+In this repo I store notes from the course of [WEB-developer](https://www.udemy.com/course/webdeveloper/) by Ivan Petrychenko
